@@ -4,6 +4,8 @@ $font_color_1: white;
 $font_color_2: rgb(227, 224, 224);
 $title_color: rgb(15, 238, 15);
 $shadow_cards: 3px 7px 17px 0px rgba(0,227,217,0.47);
+$btn_color: rgb(7, 112, 104);
+$btn_color_hover: rgb(5, 175, 96);
 
 //------------------------- FONTS ------------------------//
 @font-face {
@@ -54,6 +56,8 @@ body{
         width: 100%;
         justify-content: center;
         align-items: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
 
         img{
             height: 100px;
@@ -143,8 +147,131 @@ body{
         height: 100%;
         align-content: center;
         font-family: roboto;
+        background-color: rgb(118, 114, 114);
+        background-image: url("../images/alt_background2.jpg");
+        background-size: 100% 100%;
+        background-blend-mode:difference;
+        background-position: center;
     }
 
+    #projects{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        font-family: roboto;
+        color: $font_color_2;
+        background: rgb(29, 29, 29);
+
+        #gardening_app{
+            background-image: url("../images/project_background.PNG");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-blend-mode: multiply;
+        }
+
+        .project_cards{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            justify-content: space-evenly;
+            overflow: scroll;
+            border-radius: 10px;
+            background: rgb(0, 119, 113);
+            align-self: center;
+            margin-bottom: 30px;
+
+            .logo_wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-self: center;
+                width: 100%;
+                img{
+                    width: 80%;
+                    align-self: center;
+                    margin: 15px;
+                }
+            }
+
+            .image_wrapper_project{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-content: center;
+                img{
+                    height: 500px;
+                }
+                img:hover{
+                    transition: 600ms;
+                    filter: brightness(120%);
+                }
+            }
+
+            .project_info{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-content: center;
+                width: 100%;
+
+                h3{
+                    text-align: center;
+                    font-family: nullshock;
+                }
+
+                p{
+                    padding: 15px;
+                    text-align: center;
+                    line-height: 1.7rem;
+                }
+
+                .btn_wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    align-self: center;
+
+                    button{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-content: center;
+                        padding: 0px;
+                        width: 90%;
+                        margin-bottom: 30px;
+                        border-radius: 10px;
+                        background: $btn_color;
+                        border: none;
+                        font-family: nullshock;
+                        color: $font_color_1;
+                        cursor: pointer;
+                    }
+                    button:hover{
+                        transition: 300ms;
+                        background: $btn_color_hover;
+                    }
+
+                    img{
+                        height: 40px;
+                        justify-self: center;
+                        align-self: center;
+                        border-radius: 100%;
+                        background: white;
+                        border: 2px solid white;
+                    }
+                }
+            }
+        }
+        .project_cards:hover{
+            transition: 300ms;
+            box-shadow: $shadow_cards;
+        }
+    }
 
     #certificaciones{
         display: flex;

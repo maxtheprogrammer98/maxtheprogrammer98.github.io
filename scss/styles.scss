@@ -7,6 +7,32 @@ $shadow_cards: 3px 7px 17px 0px rgba(0,227,217,0.47);
 $btn_color: rgb(7, 112, 104);
 $btn_color_hover: rgb(5, 175, 96);
 
+//------------------------- MIXINS ------------------------//
+@mixin sectionStyleA{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    font-family: roboto;
+    background-color: rgb(118, 114, 114);
+    background-image: url("../images/alt_background2.jpg");
+    background-size: 100% 100%;
+    background-blend-mode:difference;
+    background-position: center;
+}
+
+@mixin sectionStyleB{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    font-family: roboto;
+    color: $font_color_2;
+    background: rgb(29, 29, 29);
+}
+
 //------------------------- FONTS ------------------------//
 @font-face {
     font-family: "roboto";
@@ -50,7 +76,7 @@ body{
         }
     }
 
-    .section_title{
+    .section_title_a{
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -72,6 +98,38 @@ body{
         h2{
             font-family: nullshock;
             color: $font_color_1;
+        }
+    }
+    
+    .section_title_b{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+        img{
+            height: 100px;
+            margin-top: 25px;
+        }
+
+        img:hover{
+            transition: 500ms;
+            transform: rotate(10deg);
+        }
+
+        h2{
+            font-family: nullshock;
+            color: $background_color_1;
+        }
+    }
+
+    #programmer_title{
+        img{
+            border-radius: 100px;
+            height: 130px;
         }
     }
 
@@ -141,34 +199,51 @@ body{
     }
 
     #about_me{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        align-content: center;
-        font-family: roboto;
-        background-color: rgb(118, 114, 114);
-        background-image: url("../images/alt_background2.jpg");
-        background-size: 100% 100%;
-        background-blend-mode:difference;
-        background-position: center;
+        @include sectionStyleA();
     }
 
     #projects{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        align-content: center;
-        font-family: roboto;
-        color: $font_color_2;
-        background: rgb(29, 29, 29);
+        @include sectionStyleB();
 
+        // special adjustments
         #gardening_app{
             background-image: url("../images/project_background.PNG");
             background-size: cover;
             background-repeat: no-repeat;
             background-blend-mode: multiply;
+        }
+
+        // special adjustments
+        #gardening_web{
+            background-image: url("../images/background6.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-blend-mode: multiply;
+
+            #web_example{
+                height: 300px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        }
+
+        //special adjustments
+        #art_master{
+            background-image: url("../images/fondo6.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-blend-mode: normal;
+
+            #art_master_img{
+                height: 450px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            #isologo{
+                width: 60%;
+                margin-top: 30px;
+            }
         }
 
         .project_cards{
@@ -180,7 +255,7 @@ body{
             border-radius: 10px;
             background: rgb(0, 119, 113);
             align-self: center;
-            margin-bottom: 30px;
+            margin-bottom: 60px;
 
             .logo_wrapper{
                 display: flex;
@@ -274,19 +349,11 @@ body{
     }
 
     #certificaciones{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        align-content: center;
-        font-family: roboto;
+        @include sectionStyleB()
     }
 
     #contact{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
+        @include sectionStyleA();
 
         .contact_wrapper{
             display: flex;

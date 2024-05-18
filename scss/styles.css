@@ -33,7 +33,7 @@ body header #logo {
 body header #firma {
   width: 60%;
 }
-body .section_title {
+body .section_title_a {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -42,17 +42,42 @@ body .section_title {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-body .section_title img {
+body .section_title_a img {
   height: 100px;
   margin-top: 25px;
 }
-body .section_title img:hover {
+body .section_title_a img:hover {
   transition: 500ms;
   transform: rotate(10deg);
 }
-body .section_title h2 {
+body .section_title_a h2 {
   font-family: nullshock;
   color: white;
+}
+body .section_title_b {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+body .section_title_b img {
+  height: 100px;
+  margin-top: 25px;
+}
+body .section_title_b img:hover {
+  transition: 500ms;
+  transform: rotate(10deg);
+}
+body .section_title_b h2 {
+  font-family: nullshock;
+  color: rgb(18, 18, 18);
+}
+body #programmer_title img {
+  border-radius: 100px;
+  height: 130px;
 }
 body .cards {
   display: flex;
@@ -140,6 +165,32 @@ body #projects #gardening_app {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
 }
+body #projects #gardening_web {
+  background-image: url("../images/background6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+body #projects #gardening_web #web_example {
+  height: 300px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+body #projects #art_master {
+  background-image: url("../images/fondo6.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: normal;
+}
+body #projects #art_master #art_master_img {
+  height: 450px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+body #projects #art_master #isologo {
+  width: 60%;
+  margin-top: 30px;
+}
 body #projects .project_cards {
   display: flex;
   flex-direction: column;
@@ -149,7 +200,7 @@ body #projects .project_cards {
   border-radius: 10px;
   background: rgb(0, 119, 113);
   align-self: center;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 body #projects .project_cards .logo_wrapper {
   display: flex;
@@ -239,12 +290,21 @@ body #certificaciones {
   height: 100%;
   align-content: center;
   font-family: roboto;
+  color: rgb(227, 224, 224);
+  background: rgb(29, 29, 29);
 }
 body #contact {
   display: flex;
-  width: 100%;
   flex-direction: column;
-  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  font-family: roboto;
+  background-color: rgb(118, 114, 114);
+  background-image: url("../images/alt_background2.jpg");
+  background-size: 100% 100%;
+  background-blend-mode: difference;
+  background-position: center;
 }
 body #contact .contact_wrapper {
   display: flex;

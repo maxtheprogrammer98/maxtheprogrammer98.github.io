@@ -90,6 +90,7 @@ body .cards {
   border-radius: 10px;
   background: rgb(18, 18, 18);
   color: white;
+  overflow: hidden !important;
 }
 body .cards .image_wrapper {
   display: flex;
@@ -98,7 +99,7 @@ body .cards .image_wrapper {
   align-content: center;
 }
 body .cards .image_wrapper img {
-  height: 150px;
+  height: 125px;
   border-radius: 100%;
   margin: 20px;
 }
@@ -334,4 +335,22 @@ body #contact .contact_wrapper .contact_item p {
 body #contact .contact_wrapper:hover {
   transition: 200ms;
   box-shadow: 3px 7px 17px 0px rgba(0, 227, 217, 0.47);
+}
+
+@media only screen and (min-width: 992px) {
+  body header {
+    justify-content: center;
+  }
+  body header #logo {
+    width: 15%;
+  }
+  body header #firma {
+    width: 20%;
+    margin-left: 40px;
+  }
+  body .project_cards {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow: hidden !important;
+  }
 }/*# sourceMappingURL=styles.css.map */

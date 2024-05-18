@@ -144,6 +144,7 @@ body{
         border-radius: 10px;
         background: $background_color_1;
         color: $font_color_1;
+        overflow: hidden !important;
 
         .image_wrapper{
             display: flex;
@@ -151,7 +152,7 @@ body{
             justify-content: center;
             align-content: center;
             img{
-                height: 150px;
+                height: 125px;
                 border-radius: 100%;
                 margin: 20px;
             }
@@ -387,5 +388,27 @@ body{
             box-shadow: $shadow_cards;
         }
 
+    }
+}
+
+//------------------------- MEDIA QUERIES ------------------------//
+@media only screen and (min-width: 992px){
+    body{
+        header{
+            justify-content: center;
+            #logo{
+                width: 15%;
+            }
+            #firma{
+                width: 20%;
+                margin-left: 40px;
+            }
+        }
+
+        .project_cards{
+            display: flex !important;
+            flex-direction: row !important;
+            overflow: hidden !important;
+        }
     }
 }

@@ -83,7 +83,6 @@ body .cards {
   display: flex;
   flex-direction: column;
   width: 90%;
-  height: auto;
   overflow: hidden;
   align-self: center;
   margin: 20px;
@@ -166,6 +165,12 @@ body #projects #gardening_app {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
 }
+body #projects #gardening_app .image_wrapper_project #image2_gf_app {
+  display: none;
+}
+body #projects #gardening_app .image_wrapper_project #image3_gf_app {
+  display: none;
+}
 body #projects #gardening_web {
   background-image: url("../images/background6.jpg");
   background-size: cover;
@@ -183,14 +188,15 @@ body #projects #art_master {
   background-repeat: no-repeat;
   background-blend-mode: normal;
 }
-body #projects #art_master #art_master_img {
-  height: 450px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
 body #projects #art_master #isologo {
   width: 60%;
   margin-top: 30px;
+}
+body #projects #art_master .image_wrapper_project #art_master_img_2 {
+  display: none;
+}
+body #projects #art_master .image_wrapper_project #art_master_img_3 {
+  display: none;
 }
 body #projects .project_cards {
   display: flex;
@@ -352,5 +358,60 @@ body #contact .contact_wrapper:hover {
     display: flex !important;
     flex-direction: row !important;
     overflow: hidden !important;
+    margin-bottom: 125px !important;
+    border: rgb(2, 111, 138) 3px solid;
+  }
+  body .project_cards .logo_wrapper img {
+    width: 250px !important;
+  }
+  body .project_cards .image_wrapper_project img {
+    height: 500px !important;
+  }
+  body .project_cards .image_wrapper_project #web_example {
+    height: 400px !important;
+  }
+  body .project_cards .project_info {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 50px;
+  }
+  body .project_cards .description_wrapper .btn_wrapper button {
+    width: 300px !important;
+  }
+  body #certificaciones {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: rgb(118, 114, 114);
+    background-image: url("../images/alt_background2.jpg");
+    background-size: 100% 100%;
+    background-blend-mode: difference;
+    background-position: center;
+  }
+  body #certificaciones .cards {
+    height: 550px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  body #contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    font-family: roboto;
+    color: rgb(227, 224, 224);
+    background: rgb(29, 29, 29);
+  }
+  body #projects #gardening_app .image_wrapper_project #image2_gf_app {
+    display: flex;
+  }
+  body #projects #gardening_app .image_wrapper_project #image3_gf_app {
+    display: flex;
+  }
+  body #projects #art_master .image_wrapper_project #art_master_img_2 {
+    display: flex;
+  }
+  body #projects #art_master .image_wrapper_project #art_master_img_3 {
+    display: flex;
   }
 }/*# sourceMappingURL=styles.css.map */

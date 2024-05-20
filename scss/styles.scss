@@ -137,7 +137,7 @@ body{
         display: flex;
         flex-direction: column;
         width: 90%;
-        height: auto;
+        //height: auto;
         overflow: hidden;
         align-self: center;
         margin: 20px;
@@ -212,6 +212,11 @@ body{
             background-size: cover;
             background-repeat: no-repeat;
             background-blend-mode: multiply;
+
+            .image_wrapper_project{
+                #image2_gf_app{display: none;}
+                #image3_gf_app{display: none;}
+            }
         }
 
         // special adjustments
@@ -235,15 +240,14 @@ body{
             background-repeat: no-repeat;
             background-blend-mode: normal;
 
-            #art_master_img{
-                height: 450px;
-                margin-top: 15px;
-                margin-bottom: 15px;
-            }
-
             #isologo{
                 width: 60%;
                 margin-top: 30px;
+            }
+
+            .image_wrapper_project{
+                #art_master_img_2{display: none;}
+                #art_master_img_3{display: none;}
             }
         }
 
@@ -409,6 +413,70 @@ body{
             display: flex !important;
             flex-direction: row !important;
             overflow: hidden !important;
+            margin-bottom: 125px !important;
+            border: rgb(2, 111, 138) 3px solid;
+
+            .logo_wrapper{
+                img{
+                    width: 250px !important;
+                }
+            }
+
+            .image_wrapper_project{
+                img{height: 500px !important;}
+                #web_example{height: 400px !important;}
+            }
+
+            .project_info{
+                background-color: rgba(0, 0, 0, 0.5);
+                margin-left: 50px;
+            }
+
+            .description_wrapper .btn_wrapper{
+                button{
+                    width: 300px !important;
+                } 
+            }
+        }
+
+        #certificaciones{
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            background-color: rgb(118, 114, 114);
+            background-image: url("../images/alt_background2.jpg");
+            background-size: 100% 100%;
+            background-blend-mode:difference;
+            background-position: center;
+
+
+            .cards{
+                height: 550px;
+                margin-bottom: 50px;
+                margin-top: 50px;
+                
+            }
+        }
+
+        #contact{
+            @include sectionStyleB()
+            
+        }
+
+        #projects{
+            #gardening_app{
+                .image_wrapper_project{
+                    #image2_gf_app{display: flex;}
+                    #image3_gf_app{display: flex;}
+                }
+            }
+
+            #art_master{
+                .image_wrapper_project{
+                    #art_master_img_2{display: flex;}
+                    #art_master_img_3{display: flex;}
+                }
+            }
         }
     }
 }

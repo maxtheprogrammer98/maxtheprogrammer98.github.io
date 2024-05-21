@@ -198,6 +198,25 @@ body #projects #art_master .image_wrapper_project #art_master_img_2 {
 body #projects #art_master .image_wrapper_project #art_master_img_3 {
   display: none;
 }
+body #projects #luis_nastrai_app {
+  background-image: url("../images/abstract_background.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: normal;
+}
+body #projects #luis_nastrai_app #isologo {
+  width: 60%;
+  margin-top: 30px;
+}
+body #projects #luis_nastrai_app .image_wrapper_project #img_nastrai_2 {
+  display: none;
+}
+body #projects #luis_nastrai_app .image_wrapper_project #img_nastrai_3 {
+  display: none;
+}
+body #projects #luis_nastrai_app .project_info {
+  color: black;
+}
 body #projects .project_cards {
   display: flex;
   flex-direction: column;
@@ -362,20 +381,20 @@ body #contact .contact_wrapper:hover {
     border: rgb(2, 111, 138) 3px solid;
   }
   body .project_cards .logo_wrapper img {
-    width: 250px !important;
+    width: 220px !important;
   }
   body .project_cards .image_wrapper_project img {
-    height: 500px !important;
+    height: 450px !important;
   }
   body .project_cards .image_wrapper_project #web_example {
-    height: 400px !important;
+    height: 350px !important;
   }
   body .project_cards .project_info {
     background-color: rgba(0, 0, 0, 0.5);
     margin-left: 50px;
   }
   body .project_cards .description_wrapper .btn_wrapper button {
-    width: 300px !important;
+    width: 85% !important;
   }
   body #certificaciones {
     display: flex;
@@ -388,9 +407,12 @@ body #contact .contact_wrapper:hover {
     background-position: center;
   }
   body #certificaciones .cards {
-    height: 550px;
+    height: 600px;
     margin-bottom: 50px;
     margin-top: 50px;
+  }
+  body #certificaciones .cards p {
+    font-size: 0.95rem;
   }
   body #contact {
     display: flex;
@@ -412,6 +434,15 @@ body #contact .contact_wrapper:hover {
     display: flex;
   }
   body #projects #art_master .image_wrapper_project #art_master_img_3 {
+    display: flex;
+  }
+  body #projects #luis_nastrai_app .logo_wrapper #isologo_nastrai {
+    mix-blend-mode: multiply;
+  }
+  body #projects #luis_nastrai_app .image_wrapper_project #img_nastrai_2 {
+    display: flex;
+  }
+  body #projects #luis_nastrai_app .image_wrapper_project #img_nastrai_3 {
     display: flex;
   }
 }/*# sourceMappingURL=styles.css.map */

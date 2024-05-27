@@ -417,7 +417,7 @@ body #contact .contact_wrapper:hover {
     height: 450px !important;
   }
   body .project_cards .image_wrapper_project #web_example {
-    height: 325px !important;
+    height: 350px !important;
   }
   body .project_cards .project_info {
     background-color: rgba(0, 0, 0, 0.5);
@@ -425,6 +425,12 @@ body #contact .contact_wrapper:hover {
   }
   body .project_cards .description_wrapper .btn_wrapper button {
     width: 85% !important;
+  }
+  body #luis_nastrai_app .project_info {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  body #luis_nastrai_app .project_info p, body #luis_nastrai_app .project_info h3 {
+    color: white;
   }
   body #certificaciones {
     display: flex;

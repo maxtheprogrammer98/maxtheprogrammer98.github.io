@@ -477,7 +477,7 @@ body{
                 justify-content: center;
                 align-items: center;
                 img{height: 450px !important;}
-                #web_example{height: 325px !important;}
+                #web_example{height: 350px !important;}
             }
 
             .project_info{
@@ -491,6 +491,14 @@ body{
                 } 
             }
         }
+
+        #luis_nastrai_app{
+            .project_info {
+                background-color: rgba(0, 0, 0, 0.4);
+                p, h3{color: white;}
+            }
+        }
+
 
         #certificaciones{
             display: flex;

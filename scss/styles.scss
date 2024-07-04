@@ -437,28 +437,6 @@ body{
             }
         }
 
-        #about_me_card{
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 50px;
-
-            #programmer_title{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 30%;
-                height: 100%;
-                h2{display:none;}
-            }
-
-            #info_cards_wrapper{
-                width: 70%;
-                #cards_description #desc_about_me {
-                    text-align: left !important;
-                }
-            }
-        }
-
         .project_cards{
             display: flex !important;
             flex-direction: row !important;
@@ -517,6 +495,10 @@ body{
                 margin-top: 50px;
                 p{
                     font-size: 0.95rem;
+                }
+                .cards_title{
+                    margin-left: 10px;
+                    margin-right: 10px;
                 }
             }
         }

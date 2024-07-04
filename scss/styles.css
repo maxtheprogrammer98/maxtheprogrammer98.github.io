@@ -377,27 +377,6 @@ body #contact .contact_wrapper:hover {
     width: 20%;
     margin-left: 40px;
   }
-  body #about_me_card {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 50px;
-  }
-  body #about_me_card #programmer_title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 100%;
-  }
-  body #about_me_card #programmer_title h2 {
-    display: none;
-  }
-  body #about_me_card #info_cards_wrapper {
-    width: 70%;
-  }
-  body #about_me_card #info_cards_wrapper #cards_description #desc_about_me {
-    text-align: left !important;
-  }
   body .project_cards {
     display: flex !important;
     flex-direction: row !important;
@@ -449,6 +428,10 @@ body #contact .contact_wrapper:hover {
   }
   body #certificaciones .cards p {
     font-size: 0.95rem;
+  }
+  body #certificaciones .cards .cards_title {
+    margin-left: 10px;
+    margin-right: 10px;
   }
   body #contact {
     display: flex;

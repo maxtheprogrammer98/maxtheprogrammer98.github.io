@@ -16,6 +16,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 100;
 }
 body header {
   display: flex;
@@ -26,12 +27,44 @@ body header {
   justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
+  border-bottom: 3px solid rgba(0, 255, 195, 0.3);
 }
 body header #logo {
   width: 20%;
 }
 body header #firma {
   width: 60%;
+}
+body #tech_stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(18, 18, 18);
+  font-family: roboto;
+  background: rgb(29, 29, 29);
+  border-bottom: 2px solid darkslategrey;
+}
+body #tech_stack #table_container {
+  margin-bottom: 50px;
+}
+body #tech_stack #table_container .responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+body #tech_stack #table_container .responsive-table thead {
+  background-color: #f2f2f2;
+}
+body #tech_stack #table_container .responsive-table th, body #tech_stack #table_container .responsive-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+body #tech_stack #table_container .responsive-table th {
+  background-color: #f8f8f8;
+}
+body #tech_stack #table_container .responsive-table img {
+  vertical-align: middle;
 }
 body .section_title_a {
   display: flex;
@@ -41,6 +74,10 @@ body .section_title_a {
   align-items: center;
   margin-top: 25px;
   margin-bottom: 25px;
+  color: white;
+}
+body .section_title_a p {
+  color: lightgray;
 }
 body .section_title_a img {
   height: 100px;

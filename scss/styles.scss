@@ -86,7 +86,7 @@ body{
         background-color: $background_color_1;
         font-family: roboto;
         background: rgb(29, 29, 29);
-        border-bottom: 2px solid darkslategrey;
+        border-bottom: 2px solid #20C997;
 
         #table_container{
             margin-bottom: 50px;
@@ -101,7 +101,7 @@ body{
                 th, td {
                     padding: 12px;
                     text-align: left;
-                    border: 1px solid #ddd;
+                    border: 1px solid #20C997;
                 }
             
                 th {
@@ -188,6 +188,7 @@ body{
         background: $background_color_1;
         color: $font_color_1;
         overflow: hidden !important;
+        border: 2px #20C997 solid;
 
         .image_wrapper{
             display: flex;
@@ -229,7 +230,7 @@ body{
             .link_certificate{
                 text-align: center;
                 font-weight: bold;
-                color: lightblue;
+                color: #20C997;
                 font-size: 1.1rem;
                 cursor: pointer;
             }
@@ -251,6 +252,7 @@ body{
 
     #projects{
         @include sectionStyleB();
+        border-bottom: 2px solid #20C997;
 
         // special adjustments
         #gardening_app{
@@ -263,6 +265,20 @@ body{
                 #image2_gf_app{display: none;}
                 #image3_gf_app{display: none;}
             }
+        }
+
+        #odin_ai{
+            background-image: url("../images/fondo_odin.JPG");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-blend-mode: multiply;
+
+            #image1_OAI{
+                height: 300px !important;
+                margin-top: 15px !important;
+                margin-bottom: 15px !important;
+            }
+            
         }
 
         // special adjustments
@@ -329,6 +345,7 @@ body{
             background: rgb(0, 119, 113);
             align-self: center;
             margin-bottom: 60px;
+            border: 2px #20C997 solid;
 
             .logo_wrapper{
                 display: flex;
@@ -412,6 +429,10 @@ body{
                         background: white;
                         border: 2px solid white;
                     }
+
+                    #web_icon{
+                        background: none !important;
+                    }
                 }
             }
         }
@@ -422,7 +443,7 @@ body{
     }
 
     #certificaciones{
-        @include sectionStyleB()
+        @include sectionStyleB();
     }
 
     #contact{
@@ -437,6 +458,7 @@ body{
             align-self: center;
             margin-top: 25px;
             margin-bottom: 25px;
+            border: 2px #20C997 solid;
 
             .contact_item{
                 display: flex;
@@ -497,7 +519,7 @@ body{
                 justify-content: center;
                 align-items: center;
                 img{height: 450px !important;}
-                #web_example{height: 350px !important;}
+                #web_example, #image1_OAI{height: 350px !important;}
             }
 
             .project_info{
@@ -524,11 +546,12 @@ body{
             display: flex;
             flex-direction: column;
             height: 100%;
-            background-color: rgb(118, 114, 114);
-            background-image: url("../images/alt_background2.jpg");
-            background-size: 100% 100%;
-            background-blend-mode:difference;
-            background-position: center;
+            //background-color: rgb(118, 114, 114);
+            //background-image: url("../images/alt_background2.jpg");
+            //background-size: 100% 100%;
+            //background-blend-mode:difference;
+            //background-position: center;
+            border-bottom: 2px solid #20C997;
 
             #wrapper_cards_cert{
                 display: flex;

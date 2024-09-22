@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="../scss/styles.css">
+    <link rel="icon" href="../images/project_icon.png" type="image/png">
+
 </head>
 
 <body>
@@ -19,8 +21,9 @@
         <div class="section_title_a">
             <img src="images/programmer.png" alt="programmer_icon">
             <h2>Tech Stack</h2>
-            <p> Desarrollador Web & Android</p>
+            <p style="color: white;"> Desarrollador Web & Android</p>
             <p> Click sobre la tecnologia para ver mas informacion</p>
+            <p> Mas abajo podrás ver mis proyectos y certificaciones</p>
         </div>
 
         <div id="table_container">
@@ -117,34 +120,31 @@
             <h2>Proyectos</h2>
         </div>
 
-        <div class="project_cards" id="gardening_app">
-
+        <div class="project_cards" id="odin_ai">
+            
             <!-- logo wrapper -->
             <div class="logo_wrapper">
-                <img src="../images/logo-version-1.png" alt="isologo" id="isologo">
+                <img src="../images/isologo_odin.png" alt="isologo" id="isologo">
             </div>
-
+    
             <!-- project img preview -->
             <div class="image_wrapper_project">
-                <img src="../images/gardening_app.png" alt="mobile_example" id="image1_gf_app">
-                <img src="../images/gardening_app_2.png".png" alt="mobile_example" id="image2_gf_app">
-                <img src="../images/gardening_app_3.png" alt="mobile_example" id="image3_gf_app">
+                <img src="../images/odinAI.png" alt="web_example" id="image1_OAI">
             </div>
-
+    
             <!-- project info -->
             <div class="project_info">
-
+    
                 <div class="description_wrapper">
-                    <h3>GardeningFriend - App</h3>
+                    <h3>OdinAI - Web</h3>
                     <p>
-                        Aplicación Android que provee una extensa biblioteca de cultivos y plantas para que puedas informarte.
-                        Además, incluye una sección de "recomendaciones" que te permite encontrar el cultivo más adecuado para tu caso y un
-                        asistente IA que puede procesar fotos para identificar cultivos.
+                        Aplicación web que integra distintos LLMs con los que puedes interactuar a través de solicitudes en forma de texto. Además, incluye control de voz integrado y una funcionalidad
+                        especial que actúa como rastreador de manos (solo compatible con navegadores basados en Chromium).
                     </p>
                     <div class="btn_wrapper">
-                        <button onclick="window.location.href='https://github.com/GardeningFriendTeam/GardeningFriendApp'">
-                            <img src="../images/github.png" alt="github_icon">
-                            <p> Visitar Repositorio</p>
+                        <button onclick="window.location.href='https://odinai-31f7d.web.app'">
+                            <img src="../images/ic_web.png" alt="web_icon" id="web_icon">
+                            <p> Visitar Web</p>
                         </button>
                     </div>
                 </div>
@@ -181,6 +181,39 @@
             </div>
         </div>
 
+        <div class="project_cards" id="gardening_app">
+            <!-- logo wrapper -->
+            <div class="logo_wrapper">
+                <img src="../images/logo-version-1.png" alt="isologo" id="isologo">
+            </div>
+
+            <!-- project img preview -->
+            <div class="image_wrapper_project">
+                <img src="../images/gardening_app.png" alt="mobile_example" id="image1_gf_app">
+                <img src="../images/gardening_app_2.png".png" alt="mobile_example" id="image2_gf_app">
+                <img src="../images/gardening_app_3.png" alt="mobile_example" id="image3_gf_app">
+            </div>
+
+            <!-- project info -->
+            <div class="project_info">
+
+                <div class="description_wrapper">
+                    <h3>GardeningFriend - App Android</h3>
+                    <p>
+                        Aplicación Android que provee una extensa biblioteca de cultivos y plantas para que puedas informarte.
+                        Además, incluye una sección de "recomendaciones" que te permite encontrar el cultivo más adecuado para tu caso y un
+                        asistente IA que puede procesar fotos para identificar cultivos.
+                    </p>
+                    <div class="btn_wrapper">
+                        <button onclick="window.location.href='https://github.com/GardeningFriendTeam/GardeningFriendApp'">
+                            <img src="../images/github.png" alt="github_icon">
+                            <p> Visitar Repositorio</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
         <div class="project_cards" id="art_master">
             <!-- logo wrapper -->
             <div class="logo_wrapper">
@@ -198,7 +231,7 @@
             <div class="project_info">
 
                 <div class="description_wrapper">
-                    <h3>ArtMaster - App</h3>
+                    <h3>ArtMaster - App Android</h3>
                     <p>
                         Aplicación Android sobre dibujo realista y tutoriales. Esta app provee una amplia gama de tutoriales de dibujo y permite al usuario controlar su progreso.
                         Otra de sus funcionalidades principales es un asistente de IA que puede ayudarte en lo que desees.
@@ -212,7 +245,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="project_cards" id="luis_nastrai_app">
             <!-- logo wrapper -->
@@ -231,7 +263,7 @@
             <div class="project_info">
 
                 <div class="description_wrapper">
-                    <h3>Carteleria - App</h3>
+                    <h3>Carteleria - App Android</h3>
                     <p>
                         App Android que desarrollé para una empresa de cartelería, para que sea posible guardar un registro de los clientes digitalmente.
                         También incluye un asistente de IA. Esta app fue construida con Kotlin/Compose + Firebase.
@@ -285,7 +317,7 @@
                 </div>
                 <!-- information -->
                 <div class="info_cards_wrapper">
-                    <h3 class="cards_title"> TECNICATURA SUPERIOR - DESARROLLO DE APLICACIONES DIGITALES (ISPC)</h3>
+                    <h3 class="cards_title"> TECNICATURA SUPERIOR - DESARROLLO WEB y APLICACIONES DIGITALES (ISPC)</h3>
                     <p class="cards_description">
                         Esta tecnicatura duró 2.5 años, en los cuales se abordó una amplia gama de temas.
                         Comenzando por los fundamentos de la programación, donde principalmente nos centramos en Python

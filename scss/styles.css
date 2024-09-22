@@ -42,7 +42,7 @@ body #tech_stack {
   background-color: rgb(18, 18, 18);
   font-family: roboto;
   background: rgb(29, 29, 29);
-  border-bottom: 2px solid darkslategrey;
+  border-bottom: 2px solid #20C997;
 }
 body #tech_stack #table_container {
   margin-bottom: 50px;
@@ -57,7 +57,7 @@ body #tech_stack #table_container .responsive-table thead {
 body #tech_stack #table_container .responsive-table th, body #tech_stack #table_container .responsive-table td {
   padding: 12px;
   text-align: left;
-  border: 1px solid #ddd;
+  border: 1px solid #20C997;
 }
 body #tech_stack #table_container .responsive-table th {
   background-color: #f8f8f8;
@@ -127,6 +127,7 @@ body .cards {
   background: rgb(18, 18, 18);
   color: white;
   overflow: hidden !important;
+  border: 2px #20C997 solid;
 }
 body .cards .image_wrapper {
   display: flex;
@@ -165,7 +166,7 @@ body .cards .info_cards_wrapper .cards_description {
 body .cards .info_cards_wrapper .link_certificate {
   text-align: center;
   font-weight: bold;
-  color: lightblue;
+  color: #20C997;
   font-size: 1.1rem;
   cursor: pointer;
 }
@@ -198,6 +199,7 @@ body #projects {
   font-family: roboto;
   color: rgb(227, 224, 224);
   background: rgb(29, 29, 29);
+  border-bottom: 2px solid #20C997;
 }
 body #projects #gardening_app {
   background-image: url("../images/project_background.PNG");
@@ -210,6 +212,17 @@ body #projects #gardening_app .image_wrapper_project #image2_gf_app {
 }
 body #projects #gardening_app .image_wrapper_project #image3_gf_app {
   display: none;
+}
+body #projects #odin_ai {
+  background-image: url("../images/fondo_odin.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+body #projects #odin_ai #image1_OAI {
+  height: 300px !important;
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
 }
 body #projects #gardening_web {
   background-image: url("../images/background6.jpg");
@@ -267,6 +280,7 @@ body #projects .project_cards {
   background: rgb(0, 119, 113);
   align-self: center;
   margin-bottom: 60px;
+  border: 2px #20C997 solid;
 }
 body #projects .project_cards .logo_wrapper {
   display: flex;
@@ -345,6 +359,9 @@ body #projects .project_cards .project_info .btn_wrapper img {
   background: white;
   border: 2px solid white;
 }
+body #projects .project_cards .project_info .btn_wrapper #web_icon {
+  background: none !important;
+}
 body #projects .project_cards:hover {
   transition: 300ms;
   box-shadow: 3px 7px 17px 0px rgba(0, 227, 217, 0.47);
@@ -381,6 +398,7 @@ body #contact .contact_wrapper {
   align-self: center;
   margin-top: 25px;
   margin-bottom: 25px;
+  border: 2px #20C997 solid;
 }
 body #contact .contact_wrapper .contact_item {
   display: flex;
@@ -431,7 +449,7 @@ body #contact .contact_wrapper:hover {
   body .project_cards .image_wrapper_project img {
     height: 450px !important;
   }
-  body .project_cards .image_wrapper_project #web_example {
+  body .project_cards .image_wrapper_project #web_example, body .project_cards .image_wrapper_project #image1_OAI {
     height: 350px !important;
   }
   body .project_cards .project_info {
@@ -451,11 +469,7 @@ body #contact .contact_wrapper:hover {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: rgb(118, 114, 114);
-    background-image: url("../images/alt_background2.jpg");
-    background-size: 100% 100%;
-    background-blend-mode: difference;
-    background-position: center;
+    border-bottom: 2px solid #20C997;
   }
   body #certificaciones #wrapper_cards_cert {
     display: flex;
